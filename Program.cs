@@ -1,24 +1,9 @@
-﻿// Name: Elizabeth Trotter
-
-// Date Revised: 9/15/2023
-
-// Exercise: Mini Challenge # 8 - Guess It
-
-// Brief Description: Create a guessing game in a brand new console project. 
-//                    Use Random function to select a number.
-//                    Print if guess is higher or lower than the number guessed.
-//                    Keep track of the number of guesses it took for user to get the number.
-//                    Make it where the user can choose easy, medium, or hard mode before they begin. (Easy = 1 to 10, Medium = 1 to 50, Hard = 1 to 100)
-//                    Extra Credit: Allow the user to enter in the number range to guess. (Custom mode)
-
-// Peer Review: Tommy Ngo
-// Everything runs as intended and looks perfect. Great start to the year! :)
-
-Console.Clear();
+﻿Console.Clear();
 
 Console.WriteLine("Mini Challenge # 8 - Guess It");
-void Break(){
-    string breakPoint = ("----------------------------------");
+void Break()
+{
+    string breakPoint = ("----------------------------------------------------------");
     Console.WriteLine(breakPoint);
 }
 
@@ -27,214 +12,312 @@ void SlowPrint(string text)
     foreach (char c in text)
     {
         Console.Write(c);
-        Thread.Sleep(50); // Adjust the sleep duration as needed
+        Thread.Sleep(30);
     }
     Console.WriteLine();
 }
 
 Break();
+Console.WriteLine();
 SlowPrint("INSTRUCTIONS: Today, we will play a game in which you will try to guess a random number. I will provide hints along the way and keep track of how many guesses you made before getting the right answer. Try to win the game with the least amount of guesses possible! There will be 4 different modes of difficulty for you to choose from that will determine the range of whole numbers we'll be working with. **Easy (1-10), Medium (1-50), Hard (1-100), or Custom (YOU choose the range)** Be sure to try out the custom mode for some EXTRA fun! Good luck!");
+Console.WriteLine();
 Break();
 
 int guessNum;
 int i;
-void ValidNum(string range){
+void ValidNum(string range)
+{
     bool success = true;
     Break();
+    Console.WriteLine();
     Console.Write($"Please guess a number between {range}: ");
-    while (success != Int32.TryParse(Console.ReadLine(), out guessNum)){
+    while (success != Int32.TryParse(Console.ReadLine(), out guessNum))
+    {
         Console.Write("Input invalid! You must enter a whole number: ");
     }
-    Break();
+    Console.WriteLine();
     i++;
 }
 
 int minRange;
 int maxRange;
-void ValidNumCustom(){
+void ValidNumCustom()
+{
     bool success = true;
     Break();
-    Console.WriteLine("Okay, customizer! Let's choose some whole numbers!");
+    Console.WriteLine();
+    SlowPrint("Okay, customizer! Let's choose some whole numbers!");
+    Console.WriteLine();
     Console.Write($"Please enter your MINIMUM range value: ");
-    while (success != Int32.TryParse(Console.ReadLine(), out minRange)){
+    while (success != Int32.TryParse(Console.ReadLine(), out minRange))
+    {
         Console.Write("Input invalid! You must enter a whole number: ");
     }
+    Console.WriteLine();
     Console.Write($"Next, please enter your MAXIMUM range value (must be greater than your minimum): ");
-    while (success != Int32.TryParse(Console.ReadLine(), out maxRange) || minRange >= maxRange){
+    while (success != Int32.TryParse(Console.ReadLine(), out maxRange) || minRange >= maxRange)
+    {
         Console.Write("Input invalid! You must enter a whole number greater than your minimum range value: ");
     }
-    Console.WriteLine("Thanks, I've got your custom range!");
+    Console.WriteLine();
+    SlowPrint("Thanks, I've got your custom range! Let's see...");
 }
 
 Random actual = new Random();
 int actualNum;
 
 bool modeInvalid = true;
-while(modeInvalid){
-    Console.WriteLine("Please choose a mode (easy, medium, hard, or custom): ");
+while (modeInvalid)
+{
+    Console.WriteLine();
+    Console.Write("Please choose a mode (easy, medium, hard, or custom): ");
     string? mode = Console.ReadLine();
+    Console.WriteLine();
     i = 0;
-    if(mode == "easy"){
+    if (mode == "easy")
+    {
         modeInvalid = false;
         ValidNum("1 - 10");
         actualNum = actual.Next(1, 11);
         bool incorrectNum = true;
-        while(incorrectNum){
-            if(guessNum > actualNum){
-                Console.WriteLine("HINT: Your chosen number was GREATER than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+        while (incorrectNum)
+        {
+            if (guessNum > actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was GREATER than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 10");
-            }else if(guessNum < actualNum){
-                Console.WriteLine("HINT: Your chosen number was LESS than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+            }
+            else if (guessNum < actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was LESS than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 10");
-            }else{
-                Console.WriteLine("** You guessed the number, great job! **");
-                Console.WriteLine($"It took you {i} guess(es) to get the right number.");
+            }
+            else
+            {
+                Console.Write("\x1b[1m");
+                SlowPrint("** You guessed it, great job! **");
+                SlowPrint($"It took you {i} guess(es) to get the right number.");
+                Console.ResetColor();
+                Console.WriteLine();
                 Break();
                 bool invalFormat = true;
-                while(invalFormat){
-                    Console.WriteLine("Would you like to play again? (Enter yes or no)");
+                while (invalFormat)
+                {
+                    Console.WriteLine();
+                    Console.Write("Would you like to play again? (Enter yes / no): ");
                     string? userAns = Console.ReadLine()?.ToLower();
-                    if(userAns == "no"){
+                    if (userAns == "no")
+                    {
                         incorrectNum = false;
                         invalFormat = false;
+                        Console.WriteLine();
+                        SlowPrint("Thanks for playing!");
+                        SlowPrint("Goodbye!");
+                        Console.WriteLine();
                         Break();
-                        Console.WriteLine("Thanks for playing!");
-                        Break();
-                    }else if(userAns == "yes"){
+                    }
+                    else if (userAns == "yes")
+                    {
                         modeInvalid = true;
                         incorrectNum = false;
                         invalFormat = false;
-                    }else{
+                    }
+                    else
+                    {
+                        Console.WriteLine();
                         Console.WriteLine("Sorry I didn't get that...");
                         Break();
                     }
                 }
             }
         }
-    }else if(mode == "medium"){
+    }
+    else if (mode == "medium")
+    {
         modeInvalid = false;
         ValidNum("1 - 50");
         actualNum = actual.Next(1, 51);
         bool incorrectNum = true;
-        while(incorrectNum){
-            if(guessNum > actualNum){
-                Console.WriteLine("HINT: Your chosen number was GREATER than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+        while (incorrectNum)
+        {
+            if (guessNum > actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was GREATER than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 50");
-            }else if(guessNum < actualNum){
-                Console.WriteLine("HINT: Your chosen number was LESS than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+            }
+            else if (guessNum < actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was LESS than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 50");
-            }else{
-                Console.WriteLine("** You guessed the number, great job! **");
-                Console.WriteLine($"It took you {i} guess(es) to get the right number.");
+            }
+            else
+            {
+                Console.Write("\x1b[1m");
+                SlowPrint("** You guessed the number, great job! **");
+                SlowPrint($"It took you {i} guess(es) to get the right number.");
+                Console.ResetColor();
+                Console.WriteLine();
                 Break();
                 bool invalFormat = true;
-                while(invalFormat){
-                    Console.WriteLine("Would you like to play again? (Enter yes or no)");
+                while (invalFormat)
+                {
+                    Console.WriteLine();
+                    Console.Write("Would you like to play again? (Enter yes / no): ");
                     string? userAns = Console.ReadLine()?.ToLower();
-                    if(userAns == "no"){
+                    if (userAns == "no")
+                    {
                         incorrectNum = false;
                         invalFormat = false;
+                        Console.WriteLine();
+                        SlowPrint("Thanks for playing!");
+                        SlowPrint("Goodbye!");
+                        Console.WriteLine();
                         Break();
-                        Console.WriteLine("Thanks for playing!");
-                        Break();
-                    }else if(userAns == "yes"){
+                    }
+                    else if (userAns == "yes")
+                    {
                         modeInvalid = true;
                         incorrectNum = false;
                         invalFormat = false;
-                    }else{
+                    }
+                    else
+                    {
+                        Console.WriteLine();
                         Console.WriteLine("Sorry I didn't get that...");
                         Break();
                     }
                 }
             }
         }
-    }else if(mode == "hard"){
+    }
+    else if (mode == "hard")
+    {
         modeInvalid = false;
         ValidNum("1 - 100");
         actualNum = actual.Next(1, 101);
         bool incorrectNum = true;
-        while(incorrectNum){
-            if(guessNum > actualNum){
-                Console.WriteLine("HINT: Your chosen number was GREATER than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+        while (incorrectNum)
+        {
+            if (guessNum > actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was GREATER than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 100");
-            }else if(guessNum < actualNum){
-                Console.WriteLine("HINT: Your chosen number was LESS than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+            }
+            else if (guessNum < actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was LESS than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum("1 - 100");
-            }else{
-                Console.WriteLine("** You guessed the number, great job! **");
-                Console.WriteLine($"It took you {i} guess(es) to get the right number.");
+            }
+            else
+            {
+                Console.Write("\x1b[1m");
+                SlowPrint("** You guessed it, great job! **");
+                SlowPrint($"It took you {i} guess(es) to get the right number.");
+                Console.ResetColor();
+                Console.WriteLine();
                 Break();
                 bool invalFormat = true;
-                while(invalFormat){
-                    Console.WriteLine("Would you like to play again? (Enter yes or no)");
+                while (invalFormat)
+                {
+                    Console.WriteLine();
+                    Console.Write("Would you like to play again? (Enter yes / no): ");
                     string? userAns = Console.ReadLine()?.ToLower();
-                    if(userAns == "no"){
+                    if (userAns == "no")
+                    {
                         incorrectNum = false;
                         invalFormat = false;
+                        Console.WriteLine();
+                        SlowPrint("Thanks for playing!");
+                        SlowPrint("Goodbye!");
+                        Console.WriteLine();
                         Break();
-                        Console.WriteLine("Thanks for playing!");
-                        Break();
-                    }else if(userAns == "yes"){
+                    }
+                    else if (userAns == "yes")
+                    {
                         modeInvalid = true;
                         incorrectNum = false;
                         invalFormat = false;
-                    }else{
+                    }
+                    else
+                    {
+                        Console.WriteLine();
                         Console.WriteLine("Sorry I didn't get that...");
                         Break();
                     }
                 }
             }
         }
-    }else if(mode == "custom"){ //**EXTRA CREDIT**
+    }
+    else if (mode == "custom")
+    {
         modeInvalid = false;
         ValidNumCustom();
         ValidNum($"{minRange} - {maxRange}");
         actualNum = actual.Next(minRange, maxRange);
         bool incorrectNum = true;
-        while(incorrectNum){
-            if(guessNum > actualNum){
-                Console.WriteLine("HINT: Your chosen number was GREATER than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+        while (incorrectNum)
+        {
+            if (guessNum > actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was GREATER than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum($"{minRange} - {maxRange}");
-            }else if(guessNum < actualNum){
-                Console.WriteLine("HINT: Your chosen number was LESS than the actual number.");
-                Console.WriteLine("Try again and let's see if we can get closer this time!");
+            }
+            else if (guessNum < actualNum)
+            {
+                SlowPrint("HINT: Your chosen number was LESS than the actual number.");
+                SlowPrint("Try again and let's see if we can get closer this time!");
                 ValidNum($"{minRange} - {maxRange}");
-            }else{
-                Console.WriteLine("** You guessed the number, great job! **");
-                Console.WriteLine($"It took you {i} guess(es) to get the right number.");
+            }
+            else
+            {
+                Console.Write("\x1b[1m");
+                SlowPrint("** You guessed it, great job! **");
+                SlowPrint($"It took you {i} guess(es) to get the right number.");
+                Console.ResetColor();
+                Console.WriteLine();
                 Break();
                 bool invalFormat = true;
-                while(invalFormat){
-                    Console.WriteLine("Would you like to play again? (Enter yes or no)");
+                while (invalFormat)
+                {
+                    Console.WriteLine();
+                    Console.Write("Would you like to play again? (Enter yes / no): ");
                     string? userAns = Console.ReadLine()?.ToLower();
-                    if(userAns == "no"){
+                    if (userAns == "no")
+                    {
                         incorrectNum = false;
                         invalFormat = false;
+                        Console.WriteLine();
+                        SlowPrint("Thanks for playing!");
+                        SlowPrint("Goodbye!");
+                        Console.WriteLine();
                         Break();
-                        Console.WriteLine("Thanks for playing!");
-                        Break();
-                    }else if(userAns == "yes"){
+                    }
+                    else if (userAns == "yes")
+                    {
                         modeInvalid = true;
                         incorrectNum = false;
                         invalFormat = false;
-                    }else{
+                    }
+                    else
+                    {
+                        Console.WriteLine();
                         Console.WriteLine("Sorry I didn't get that...");
                         Break();
                     }
                 }
             }
         }
-    }else{
+    }
+    else
+    {
         Console.WriteLine("Sorry I didn't get that...");
         Break();
     }
 }
-
-
