@@ -21,8 +21,19 @@ void Break(){
     string breakPoint = ("----------------------------------");
     Console.WriteLine(breakPoint);
 }
+
+void SlowPrint(string text)
+{
+    foreach (char c in text)
+    {
+        Console.Write(c);
+        Thread.Sleep(50); // Adjust the sleep duration as needed
+    }
+    Console.WriteLine();
+}
+
 Break();
-Console.WriteLine("INSTRUCTIONS: Today, we will play a game in which you will try to guess a random number. I will provide hints along the way and keep track of how many guesses you made before getting the right answer. Try to win the game with the least amount of guesses possible! There will be 4 different modes of difficulty for you to choose from that will determine the range of whole numbers we'll be working with. **Easy (1-10), Medium (1-50), Hard (1-100), or Custom (YOU choose the range)** Be sure to try out the custom mode for some EXTRA fun! Good luck!");
+SlowPrint("INSTRUCTIONS: Today, we will play a game in which you will try to guess a random number. I will provide hints along the way and keep track of how many guesses you made before getting the right answer. Try to win the game with the least amount of guesses possible! There will be 4 different modes of difficulty for you to choose from that will determine the range of whole numbers we'll be working with. **Easy (1-10), Medium (1-50), Hard (1-100), or Custom (YOU choose the range)** Be sure to try out the custom mode for some EXTRA fun! Good luck!");
 Break();
 
 int guessNum;
