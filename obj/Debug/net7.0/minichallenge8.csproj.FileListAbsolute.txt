@@ -1,0 +1,42 @@
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\bin\Debug\net7.0\minichallenge8.exe
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\bin\Debug\net7.0\minichallenge8.deps.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\bin\Debug\net7.0\minichallenge8.runtimeconfig.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\bin\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\bin\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.AssemblyInfoInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.AssemblyInfo.cs
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\refint\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\minichallenge8.genruntimeconfig.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\minichallenge8\obj\Debug\net7.0\ref\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\bin\Debug\net7.0\minichallenge8.exe
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\bin\Debug\net7.0\minichallenge8.deps.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\bin\Debug\net7.0\minichallenge8.runtimeconfig.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\bin\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\bin\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.AssemblyInfoInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.AssemblyInfo.cs
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\refint\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\minichallenge8.genruntimeconfig.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\BorontrotterEMiniCha8\obj\Debug\net7.0\ref\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\bin\Debug\net7.0\minichallenge8.exe
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\bin\Debug\net7.0\minichallenge8.deps.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\bin\Debug\net7.0\minichallenge8.runtimeconfig.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\bin\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\bin\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.AssemblyInfoInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.AssemblyInfo.cs
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\refint\minichallenge8.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\minichallenge8.genruntimeconfig.cache
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Combine\Week 2\GitHub Repos 12.12.2023\guessthenumbergame\obj\Debug\net7.0\ref\minichallenge8.dll

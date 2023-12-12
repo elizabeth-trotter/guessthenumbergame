@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net7.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Elizabeth\\Desktop\\CodeStack_Projects\\Combine\\Week 2\\GitHub Repos 12.12.2023\\guessthenumbergame\\minichallenge8.csproj",
+      "projectName": "minichallenge8",
+      "projectPath": "C:\\Users\\Elizabeth\\Desktop\\CodeStack_Projects\\Combine\\Week 2\\GitHub Repos 12.12.2023\\guessthenumbergame\\minichallenge8.csproj",
+      "packagesPath": "C:\\Users\\Elizabeth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elizabeth\\Desktop\\CodeStack_Projects\\Combine\\Week 2\\GitHub Repos 12.12.2023\\guessthenumbergame\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Elizabeth\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
