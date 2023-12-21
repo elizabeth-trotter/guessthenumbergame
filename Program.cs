@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 
-Console.WriteLine("Mini Challenge # 8 - Guess It");
+Console.WriteLine("Guess the Number Game");
 void Break()
 {
     string breakPoint = ("----------------------------------------------------------");
