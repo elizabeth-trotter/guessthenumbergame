@@ -19,3 +19,14 @@ I remember feeling very proud of not only getting this particular game to work, 
     - Keep track of the number of guesses it took for user to get the number
     - Ability to choose easy, medium, or hard mode
     - Extra: Allow the user to enter in the number range to guess (Custom mode)
+
+
+---
+
+
+### Photos of Gameplay
+
+![Alt text](gameimg1.png)
+
+
+![Alt text](gameimg2.png)
