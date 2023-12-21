@@ -1,6 +1,6 @@
 # Guess the Number Game
 
-Name: Elizabeth Trotter
+**Name:** Elizabeth Trotter
 
 ## Description
 - Created a guessing game in a brand new console project. 
